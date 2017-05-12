@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post_office"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.detectivegame.PostOffice" >
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:onClick="openLocker"/>
+    
+    <ImageView 
+        android:id="@+id/prompt_pane"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/blank"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/prompt_box"/>
+    
+     <TextView 
+        android:id="@+id/instr"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="@string/postlocker_instructions"
+        android:layout_marginTop="160dp"
+       	android:layout_centerHorizontal="true"/>
+     
+     <Button
+        android:id="@+id/okay"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/okay"
+        android:textSize="12sp"
+        android:layout_below="@id/instr"
+         android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="closePrompt"/>
+
+</RelativeLayout>

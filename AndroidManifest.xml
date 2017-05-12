@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.detectivegame"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".StartScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OpenMap"
+            android:label="@string/title_activity_open_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Newspaper"
+            android:label="@string/title_activity_hidden_message"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VaultDialActivity"
+            android:label="@string/title_activity_vault_dial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VaultActivity"
+            android:label="@string/title_activity_vault"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Shop"
+            android:label="@string/title_activity_radio_assembly"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Introduction"
+            android:label="@string/title_activity_murder_scene"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CrimeScene"
+            android:label="@string/title_activity_clues"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PostLocker"
+            android:label="@string/title_activity_post_locker_dial"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PostLockerContents"
+            android:label="@string/title_activity_locker_contents"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PostOffice"
+            android:label="@string/title_activity_postal_office"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Bank"
+            android:label="@string/title_activity_bank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Diner"
+            android:label="@string/title_activity_restaurant"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DinerVault"
+            android:label="@string/title_activity_diner_vault"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BankVault"
+            android:label="@string/title_activity_bank_vault"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".DinerOwnerApartment"
+            android:label="@string/title_activity_diner_owner_apartment"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".UnknownApartment"
+            android:label="@string/title_activity_unknown_apartment" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".PoliceDepartment"
+            android:label="@string/title_activity_police_department"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PoliceLocker"
+            android:label="@string/title_activity_police_locker"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PoliceLockerContents"
+            android:label="@string/title_activity_police_locker_contents" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".House"
+            android:label="@string/title_activity_house" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HouseVaultContents"
+            android:label="@string/title_activity_home_vault_contents" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".Ending"
+            android:label="@string/title_activity_ending" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

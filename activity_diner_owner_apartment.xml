@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone_box"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.detectivegame.DinerOwnerApartment" >
+
+       <ImageView
+        android:id="@+id/blue_holder"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="230dp"/>
+       
+       <ImageView
+        android:id="@+id/black_right"
+        android:layout_width="25dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="220dp"/>
+       
+       <ImageView
+        android:id="@+id/double_left"
+        android:layout_width="20dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="240dp"/>
+       
+       <ImageView
+        android:id="@+id/red_holder"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="240dp"/>
+ 
+       <ImageView
+        android:id="@+id/green_holder"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="310dp"/>
+       
+       <ImageView
+        android:id="@+id/yellow_holder"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/redwireholder"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"/>
+       
+       <ImageView
+        android:id="@+id/blue_wire"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/blue_wire" />
+       
+       <ImageView
+        android:id="@+id/red_wire"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/red_wire" 
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"/>
+       
+       <ImageView
+        android:id="@+id/yellow_wire"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/yellow_wire" 
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"/>
+       
+       <ImageView
+        android:id="@+id/green_wire"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/green_wire" 
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"/>
+       
+       
+       <ImageView 
+        android:id="@+id/prompt_pane"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/blank"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/prompt_box"
+        android:visibility="visible"/>
+       
+       <TextView 
+        android:id="@+id/phone_instr"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+       	android:text="@string/phone_tap"
+       	android:visibility="visible"/>
+       
+       <Button 
+        android:id = "@+id/okay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_instr"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:text="@string/okay"
+		android:textSize="15sp"
+        android:onClick="closePrompt"
+        android:visibility="visible"/>
+       
+       <Button 
+        android:id = "@+id/listen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_instr"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:text="@string/listen"
+		android:textSize="15sp"
+        android:onClick="changeDialogue"
+        android:visibility="invisible"/>
+       
+</RelativeLayout>

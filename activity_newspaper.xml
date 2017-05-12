@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newspaper"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.detectivegame.Newspaper" >
+
+    <TextView 
+        android:id="@+id/article_content"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+       	android:layout_centerHorizontal="true"
+       	android:textSize="12sp"
+       	android:text="@string/blank"/>
+   
+	<EditText 
+	    android:id="@+id/message_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hidden_prompt"   
+        android:layout_marginTop="330dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+	
+    <Button
+        android:id="@+id/decipher_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decipher"
+        android:layout_below="@id/message_guess"
+        android:layout_centerHorizontal="true"
+        android:onClick="checkGuess"
+        android:visibility="invisible"/>
+    
+    <TextView 
+        android:id="@+id/validity_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:layout_centerHorizontal="true"
+       	android:layout_below="@id/decipher_button"
+       	android:text="@string/blank"
+        android:textColor="#FF0000"/>
+    
+    <ImageView 
+        android:id="@+id/prompt_pane"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/blank"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/prompt_box"
+        android:visibility="visible"/>
+    
+     <TextView 
+        android:id="@+id/newspaper_instr"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:text="@string/newspaper_instructions"
+        android:layout_marginTop="150dp"
+         android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:visibility="visible"/>
+     
+     <Button
+        android:id="@+id/newspaper_ok"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/okay"
+        android:textSize="16sp"
+        android:layout_below="@id/newspaper_instr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="closePrompt"
+        android:visibility="visible"/>
+     
+     <Button
+        android:id="@+id/okay_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/okay"
+        android:layout_below="@id/message_guess"
+        android:layout_centerHorizontal="true"
+        android:onClick="openMap"
+        android:visibility="invisible"/>
+     
+     <ImageView 
+        android:id="@+id/paper"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/blank"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/clue_paper"
+        android:visibility="invisible"/>
+     
+     <TextView android:id="@+id/message"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/newspaper_message"
+        android:textSize="14sp"
+        android:visibility="invisible"/>
+    
+</RelativeLayout>
